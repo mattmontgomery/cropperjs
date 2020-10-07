@@ -167,7 +167,7 @@ class Cropper {
       url = addTimestamp(url);
     }
 
-    xhr.open('GET', url);
+    xhr.open('GET', url, true);
     xhr.responseType = 'arraybuffer';
     xhr.withCredentials = element.crossOrigin === 'use-credentials';
     xhr.send();
